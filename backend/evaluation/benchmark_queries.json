@@ -1,0 +1,943 @@
+{
+  "metadata": {
+    "num_queries": 100,
+    "seed": 42,
+    "generated_at": "2026-01-09T15:40:00"
+  },
+  "queries": [
+    {
+      "query_id": "text_000",
+      "type": "text",
+      "query_text": "a blue dress with a high slit and a sweetheart neckline. the dress has a tulle skirt and a beaded belt at the waist.",
+      "expected_product_ids": [
+        "fashion_000212"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "text_001",
+      "type": "text",
+      "query_text": "black and white striped skirt with a knit design. the skirt has a midi length and features a mix of black and white stripes. the knit design gives the skirt a textured look and adds to its overall appeal.",
+      "expected_product_ids": [
+        "fashion_000819"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "text_002",
+      "type": "text",
+      "query_text": "pair of gray pants. the pants are made of a soft material and have a relaxed fit. they are cuffed at the bottom and have a zipper closure.",
+      "expected_product_ids": [
+        "fashion_000869"
+      ],
+      "category": "pants"
+    },
+    {
+      "query_id": "text_003",
+      "type": "text",
+      "query_text": "beige wrap skirt with a brown leather-like texture. the skirt has a high slit on the side and is made of a stretchy material.",
+      "expected_product_ids": [
+        "fashion_000976"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "text_004",
+      "type": "text",
+      "query_text": "pair of dark blue shorts with a wide waistband and a front pleat. the shorts have a cropped length and are worn with a white tucked-in shirt.",
+      "expected_product_ids": [
+        "fashion_001041"
+      ],
+      "category": "pants"
+    },
+    {
+      "query_id": "text_005",
+      "type": "text",
+      "query_text": "black silk blouse with a cowl neckline and long sleeves. the blouse has a tie at the neckline and is adorned with a silver metal ring. the fabric is silky and smooth to the touch.",
+      "expected_product_ids": [
+        "fashion_001051"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "text_006",
+      "type": "text",
+      "query_text": "black and white dress with a polka dot pattern. the dress has a sleeveless design and a round neckline. the dress is made of a stretchy material and has a fitted silhouette.",
+      "expected_product_ids": [
+        "fashion_001423"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "text_007",
+      "type": "text",
+      "query_text": "green and black skirt.",
+      "expected_product_ids": [
+        "fashion_001501"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "text_008",
+      "type": "text",
+      "query_text": "black dress with a lace overlay and a high neckline. the dress has a fitted bodice and a flared skirt. the lace overlay is black and the dress is made of a stretchy material. the dress is a formal style and is suitable for a special occasion.",
+      "expected_product_ids": [
+        "fashion_001832"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "text_009",
+      "type": "text",
+      "query_text": "black dress. the dress is made of a stretchy material and has a loose fit. it is a long sleeve dress with a boat neckline and a straight hemline.",
+      "expected_product_ids": [
+        "fashion_002168"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "text_010",
+      "type": "text",
+      "query_text": "colorful dress with a striped pattern. the dress has a mix of red, blue, and black colors. the stripes are thin and the dress is made of a material that appears to be a blend of cotton and polyester. the dress has a loose fit and is suitable for casual wear.",
+      "expected_product_ids": [
+        "fashion_002279"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "text_011",
+      "type": "text",
+      "query_text": "red dress. the dress is made of a shiny material and has a flowy style. the dress is worn by a mannequin and is a long, floor-length gown.",
+      "expected_product_ids": [
+        "fashion_002339"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "text_012",
+      "type": "text",
+      "query_text": "dress. the dress is orange in color and has a high slit on the front. it is a flowy dress with a halter neckline. the dress is worn by a woman who is standing and smiling.",
+      "expected_product_ids": [
+        "fashion_002582"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "text_013",
+      "type": "text",
+      "query_text": "black dress. the dress is made of a stretchy material and has a flowy design. it is a long dress that covers the entire body, with a high neckline and a slit on the side.",
+      "expected_product_ids": [
+        "fashion_002614"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "text_014",
+      "type": "text",
+      "query_text": "white dress. the dress is made of a shiny material and has a plunging neckline. the dress is sleeveless and has a midi length.",
+      "expected_product_ids": [
+        "fashion_002848"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "text_015",
+      "type": "text",
+      "query_text": "pink lace dress with long sleeves and a high neckline. the dress has a fitted bodice and a flowing skirt with a lace overlay. the dress is styled with a flirty, feminine look and is perfect for a special occasion.",
+      "expected_product_ids": [
+        "fashion_003039"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "text_016",
+      "type": "text",
+      "query_text": "red and green hawaiian print fabric.",
+      "expected_product_ids": [
+        "fashion_003070"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "text_017",
+      "type": "text",
+      "query_text": "black and white skirt. the skirt has a black base with a white design on it. the skirt is made of a stretchy material and has a flowy, feminine style.",
+      "expected_product_ids": [
+        "fashion_003169"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "text_018",
+      "type": "text",
+      "query_text": "black skirt with a zipper on the side. the skirt is made of a shiny material and has a ruffled trim on the bottom.",
+      "expected_product_ids": [
+        "fashion_003309"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "text_019",
+      "type": "text",
+      "query_text": "black and white coat with a fur-lined hood. the coat is made of a shiny material and has a black and white design. the fur-lined hood is black and the coat has a long, flowing shape.",
+      "expected_product_ids": [
+        "fashion_003349"
+      ],
+      "category": "jackets"
+    },
+    {
+      "query_id": "text_020",
+      "type": "text",
+      "query_text": "black dress with a bow on the back. the dress is made of a stretchy material and has a fitted bodice with a flared skirt. the dress is a size 14 and is worn by a woman with a pear-shaped body.",
+      "expected_product_ids": [
+        "fashion_003358"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "text_021",
+      "type": "text",
+      "query_text": "purple shirt with a wrap style. the shirt is made of a soft material and has a v-neckline. the wrap style creates a loose and comfortable fit.",
+      "expected_product_ids": [
+        "fashion_003648"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "text_022",
+      "type": "text",
+      "query_text": "white dress with a plunging neckline and a cutout detail on the side. the dress is made of a sheer material and has a fitted bodice with a draped skirt.",
+      "expected_product_ids": [
+        "fashion_004090"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "text_023",
+      "type": "text",
+      "query_text": "pair of brown cargo shorts with a drawstring and a back pocket. the shorts have a loose fit and are made of a soft, lightweight material.",
+      "expected_product_ids": [
+        "fashion_004572"
+      ],
+      "category": "pants"
+    },
+    {
+      "query_id": "text_024",
+      "type": "text",
+      "query_text": "woman wearing a black and white dress. the dress has a black top and a white bottom. the woman is also wearing a black belt around her waist.",
+      "expected_product_ids": [
+        "fashion_004575"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "text_025",
+      "type": "text",
+      "query_text": "white t-shirt with a black collar. the t-shirt has a relaxed fit and is made of a soft material. the design is simple and minimalistic, making it a versatile piece that can be worn with a variety of bottoms.",
+      "expected_product_ids": [
+        "fashion_004681"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "text_026",
+      "type": "text",
+      "query_text": "pair of khaki cargo pants with gold accents. the pants have a relaxed fit and are made of a shiny material. the gold accents are seen on the pants' pockets and the drawstring.",
+      "expected_product_ids": [
+        "fashion_005094"
+      ],
+      "category": "pants"
+    },
+    {
+      "query_id": "text_027",
+      "type": "text",
+      "query_text": "red sweater with a long sleeve and a high round neckline. the sweater is made of a stretchy material and has a wide shoulder.",
+      "expected_product_ids": [
+        "fashion_005231"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "text_028",
+      "type": "text",
+      "query_text": "pair of gray jeans with a zipper on the ankle. the jeans have a distressed look and are made of a stretchy material. the model is wearing a gray tank top and black ankle boots.",
+      "expected_product_ids": [
+        "fashion_005329"
+      ],
+      "category": "pants"
+    },
+    {
+      "query_id": "text_029",
+      "type": "text",
+      "query_text": "white blouse with a v-neck and long sleeves. the blouse has a lace pattern and is made of a lightweight material. the fashion style is a bit bohemian, with a relaxed fit and a loose silhouette. the blouse is perfect for layering and can be dressed up or down.",
+      "expected_product_ids": [
+        "fashion_005354"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "text_030",
+      "type": "text",
+      "query_text": "pink and black plaid shirt with a button-down collar. the shirt has long sleeves and a loose fit. the fabric appears to be a cotton blend.",
+      "expected_product_ids": [
+        "fashion_005607"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "text_031",
+      "type": "text",
+      "query_text": "green and pink skirt with a floral pattern. the skirt has a black belt at the waist and a pink lining inside. the skirt is made of a material that appears to be silk and has a floral design on it. the skirt is a knee-length and has a pencil skirt style.",
+      "expected_product_ids": [
+        "fashion_006300"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "text_032",
+      "type": "text",
+      "query_text": "white dress with a plunging neckline and a structured bodice. the dress is made of a stretchy material and has a sexy, form-fitting design.",
+      "expected_product_ids": [
+        "fashion_006515"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "image_000",
+      "type": "image",
+      "query_image_path": "data/images/fashion_006865.jpg",
+      "expected_product_ids": [
+        "fashion_006865"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "image_001",
+      "type": "image",
+      "query_image_path": "data/images/fashion_006913.jpg",
+      "expected_product_ids": [
+        "fashion_006913"
+      ],
+      "category": "pants"
+    },
+    {
+      "query_id": "image_002",
+      "type": "image",
+      "query_image_path": "data/images/fashion_006967.jpg",
+      "expected_product_ids": [
+        "fashion_006967"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "image_003",
+      "type": "image",
+      "query_image_path": "data/images/fashion_007055.jpg",
+      "expected_product_ids": [
+        "fashion_007055"
+      ],
+      "category": "pants"
+    },
+    {
+      "query_id": "image_004",
+      "type": "image",
+      "query_image_path": "data/images/fashion_007164.jpg",
+      "expected_product_ids": [
+        "fashion_007164"
+      ],
+      "category": "jackets"
+    },
+    {
+      "query_id": "image_005",
+      "type": "image",
+      "query_image_path": "data/images/fashion_007196.jpg",
+      "expected_product_ids": [
+        "fashion_007196"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "image_006",
+      "type": "image",
+      "query_image_path": "data/images/fashion_007223.jpg",
+      "expected_product_ids": [
+        "fashion_007223"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "image_007",
+      "type": "image",
+      "query_image_path": "data/images/fashion_007314.jpg",
+      "expected_product_ids": [
+        "fashion_007314"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "image_008",
+      "type": "image",
+      "query_image_path": "data/images/fashion_007467.jpg",
+      "expected_product_ids": [
+        "fashion_007467"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "image_009",
+      "type": "image",
+      "query_image_path": "data/images/fashion_007505.jpg",
+      "expected_product_ids": [
+        "fashion_007505"
+      ],
+      "category": "jackets"
+    },
+    {
+      "query_id": "image_010",
+      "type": "image",
+      "query_image_path": "data/images/fashion_007623.jpg",
+      "expected_product_ids": [
+        "fashion_007623"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "image_011",
+      "type": "image",
+      "query_image_path": "data/images/fashion_007628.jpg",
+      "expected_product_ids": [
+        "fashion_007628"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "image_012",
+      "type": "image",
+      "query_image_path": "data/images/fashion_008021.jpg",
+      "expected_product_ids": [
+        "fashion_008021"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "image_013",
+      "type": "image",
+      "query_image_path": "data/images/fashion_008024.jpg",
+      "expected_product_ids": [
+        "fashion_008024"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "image_014",
+      "type": "image",
+      "query_image_path": "data/images/fashion_008081.jpg",
+      "expected_product_ids": [
+        "fashion_008081"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "image_015",
+      "type": "image",
+      "query_image_path": "data/images/fashion_008667.jpg",
+      "expected_product_ids": [
+        "fashion_008667"
+      ],
+      "category": "jackets"
+    },
+    {
+      "query_id": "image_016",
+      "type": "image",
+      "query_image_path": "data/images/fashion_008679.jpg",
+      "expected_product_ids": [
+        "fashion_008679"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "image_017",
+      "type": "image",
+      "query_image_path": "data/images/fashion_008748.jpg",
+      "expected_product_ids": [
+        "fashion_008748"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "image_018",
+      "type": "image",
+      "query_image_path": "data/images/fashion_008773.jpg",
+      "expected_product_ids": [
+        "fashion_008773"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "image_019",
+      "type": "image",
+      "query_image_path": "data/images/fashion_008845.jpg",
+      "expected_product_ids": [
+        "fashion_008845"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "image_020",
+      "type": "image",
+      "query_image_path": "data/images/fashion_009012.jpg",
+      "expected_product_ids": [
+        "fashion_009012"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "image_021",
+      "type": "image",
+      "query_image_path": "data/images/fashion_009105.jpg",
+      "expected_product_ids": [
+        "fashion_009105"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "image_022",
+      "type": "image",
+      "query_image_path": "data/images/fashion_009108.jpg",
+      "expected_product_ids": [
+        "fashion_009108"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "image_023",
+      "type": "image",
+      "query_image_path": "data/images/fashion_009115.jpg",
+      "expected_product_ids": [
+        "fashion_009115"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "image_024",
+      "type": "image",
+      "query_image_path": "data/images/fashion_009482.jpg",
+      "expected_product_ids": [
+        "fashion_009482"
+      ],
+      "category": "pants"
+    },
+    {
+      "query_id": "image_025",
+      "type": "image",
+      "query_image_path": "data/images/fashion_009606.jpg",
+      "expected_product_ids": [
+        "fashion_009606"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "image_026",
+      "type": "image",
+      "query_image_path": "data/images/fashion_010311.jpg",
+      "expected_product_ids": [
+        "fashion_010311"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "image_027",
+      "type": "image",
+      "query_image_path": "data/images/fashion_010336.jpg",
+      "expected_product_ids": [
+        "fashion_010336"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "image_028",
+      "type": "image",
+      "query_image_path": "data/images/fashion_010626.jpg",
+      "expected_product_ids": [
+        "fashion_010626"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "image_029",
+      "type": "image",
+      "query_image_path": "data/images/fashion_011029.jpg",
+      "expected_product_ids": [
+        "fashion_011029"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "image_030",
+      "type": "image",
+      "query_image_path": "data/images/fashion_011149.jpg",
+      "expected_product_ids": [
+        "fashion_011149"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "image_031",
+      "type": "image",
+      "query_image_path": "data/images/fashion_011270.jpg",
+      "expected_product_ids": [
+        "fashion_011270"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "image_032",
+      "type": "image",
+      "query_image_path": "data/images/fashion_011641.jpg",
+      "expected_product_ids": [
+        "fashion_011641"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "combined_000",
+      "type": "combined",
+      "query_text": "pink dress with a jeweled",
+      "query_image_path": "data/images/fashion_011763.jpg",
+      "expected_product_ids": [
+        "fashion_011763"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "combined_001",
+      "type": "combined",
+      "query_text": "floral printed top with a",
+      "query_image_path": "data/images/fashion_011850.jpg",
+      "expected_product_ids": [
+        "fashion_011850"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "combined_002",
+      "type": "combined",
+      "query_text": "dark red velvet skirt with",
+      "query_image_path": "data/images/fashion_011954.jpg",
+      "expected_product_ids": [
+        "fashion_011954"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "combined_003",
+      "type": "combined",
+      "query_text": "white dress with a floral",
+      "query_image_path": "data/images/fashion_012130.jpg",
+      "expected_product_ids": [
+        "fashion_012130"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "combined_004",
+      "type": "combined",
+      "query_text": "white shirt with a collar.",
+      "query_image_path": "data/images/fashion_012403.jpg",
+      "expected_product_ids": [
+        "fashion_012403"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "combined_005",
+      "type": "combined",
+      "query_text": "purple mother of the bride",
+      "query_image_path": "data/images/fashion_012433.jpg",
+      "expected_product_ids": [
+        "fashion_012433"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "combined_006",
+      "type": "combined",
+      "query_text": "pair of gray leggings. the",
+      "query_image_path": "data/images/fashion_012449.jpg",
+      "expected_product_ids": [
+        "fashion_012449"
+      ],
+      "category": "pants"
+    },
+    {
+      "query_id": "combined_007",
+      "type": "combined",
+      "query_text": "pink and white dress with",
+      "query_image_path": "data/images/fashion_012455.jpg",
+      "expected_product_ids": [
+        "fashion_012455"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "combined_008",
+      "type": "combined",
+      "query_text": "black blazer with a white",
+      "query_image_path": "data/images/fashion_012964.jpg",
+      "expected_product_ids": [
+        "fashion_012964"
+      ],
+      "category": "jackets"
+    },
+    {
+      "query_id": "combined_009",
+      "type": "combined",
+      "query_text": "white and pink printed shirt",
+      "query_image_path": "data/images/fashion_013145.jpg",
+      "expected_product_ids": [
+        "fashion_013145"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "combined_010",
+      "type": "combined",
+      "query_text": "blue tunic top with a",
+      "query_image_path": "data/images/fashion_013746.jpg",
+      "expected_product_ids": [
+        "fashion_013746"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "combined_011",
+      "type": "combined",
+      "query_text": "pair of black pants. the",
+      "query_image_path": "data/images/fashion_013825.jpg",
+      "expected_product_ids": [
+        "fashion_013825"
+      ],
+      "category": "pants"
+    },
+    {
+      "query_id": "combined_012",
+      "type": "combined",
+      "query_text": "pair of light gray denim",
+      "query_image_path": "data/images/fashion_013848.jpg",
+      "expected_product_ids": [
+        "fashion_013848"
+      ],
+      "category": "pants"
+    },
+    {
+      "query_id": "combined_013",
+      "type": "combined",
+      "query_text": "black and blue printed coat",
+      "query_image_path": "data/images/fashion_014719.jpg",
+      "expected_product_ids": [
+        "fashion_014719"
+      ],
+      "category": "jackets"
+    },
+    {
+      "query_id": "combined_014",
+      "type": "combined",
+      "query_text": "black maxi skirt made of",
+      "query_image_path": "data/images/fashion_014857.jpg",
+      "expected_product_ids": [
+        "fashion_014857"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "combined_015",
+      "type": "combined",
+      "query_text": "a black and charcoal gray",
+      "query_image_path": "data/images/fashion_015035.jpg",
+      "expected_product_ids": [
+        "fashion_015035"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "combined_016",
+      "type": "combined",
+      "query_text": "black leather jacket. the jacket",
+      "query_image_path": "data/images/fashion_015054.jpg",
+      "expected_product_ids": [
+        "fashion_015054"
+      ],
+      "category": "jackets"
+    },
+    {
+      "query_id": "combined_017",
+      "type": "combined",
+      "query_text": "black dress. the dress is",
+      "query_image_path": "data/images/fashion_015147.jpg",
+      "expected_product_ids": [
+        "fashion_015147"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "combined_018",
+      "type": "combined",
+      "query_text": "black faux fur vest with",
+      "query_image_path": "data/images/fashion_016358.jpg",
+      "expected_product_ids": [
+        "fashion_016358"
+      ],
+      "category": "jackets"
+    },
+    {
+      "query_id": "combined_019",
+      "type": "combined",
+      "query_text": "black dress with a short",
+      "query_image_path": "data/images/fashion_016559.jpg",
+      "expected_product_ids": [
+        "fashion_016559"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "combined_020",
+      "type": "combined",
+      "query_text": "pair of pants. the pants",
+      "query_image_path": "data/images/fashion_017502.jpg",
+      "expected_product_ids": [
+        "fashion_017502"
+      ],
+      "category": "pants"
+    },
+    {
+      "query_id": "combined_021",
+      "type": "combined",
+      "query_text": "pair of black shorts with",
+      "query_image_path": "data/images/fashion_017571.jpg",
+      "expected_product_ids": [
+        "fashion_017571"
+      ],
+      "category": "pants"
+    },
+    {
+      "query_id": "combined_022",
+      "type": "combined",
+      "query_text": "pair of flowing, wide-legged pants",
+      "query_image_path": "data/images/fashion_017856.jpg",
+      "expected_product_ids": [
+        "fashion_017856"
+      ],
+      "category": "pants"
+    },
+    {
+      "query_id": "combined_023",
+      "type": "combined",
+      "query_text": "black dress with a strapless",
+      "query_image_path": "data/images/fashion_017870.jpg",
+      "expected_product_ids": [
+        "fashion_017870"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "combined_024",
+      "type": "combined",
+      "query_text": "striped polo shirt with a",
+      "query_image_path": "data/images/fashion_018089.jpg",
+      "expected_product_ids": [
+        "fashion_018089"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "combined_025",
+      "type": "combined",
+      "query_text": "green t-shirt with a black",
+      "query_image_path": "data/images/fashion_018250.jpg",
+      "expected_product_ids": [
+        "fashion_018250"
+      ],
+      "category": "tops"
+    },
+    {
+      "query_id": "combined_026",
+      "type": "combined",
+      "query_text": "green dress with a halter",
+      "query_image_path": "data/images/fashion_018390.jpg",
+      "expected_product_ids": [
+        "fashion_018390"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "combined_027",
+      "type": "combined",
+      "query_text": "black lace dress with a",
+      "query_image_path": "data/images/fashion_018585.jpg",
+      "expected_product_ids": [
+        "fashion_018585"
+      ],
+      "category": "dresses"
+    },
+    {
+      "query_id": "combined_028",
+      "type": "combined",
+      "query_text": "pair of black leggings with",
+      "query_image_path": "data/images/fashion_018918.jpg",
+      "expected_product_ids": [
+        "fashion_018918"
+      ],
+      "category": "pants"
+    },
+    {
+      "query_id": "combined_029",
+      "type": "combined",
+      "query_text": "pair of black leggings. the",
+      "query_image_path": "data/images/fashion_019309.jpg",
+      "expected_product_ids": [
+        "fashion_019309"
+      ],
+      "category": "pants"
+    },
+    {
+      "query_id": "combined_030",
+      "type": "combined",
+      "query_text": "blue denim jacket with a",
+      "query_image_path": "data/images/fashion_019349.jpg",
+      "expected_product_ids": [
+        "fashion_019349"
+      ],
+      "category": "jackets"
+    },
+    {
+      "query_id": "combined_031",
+      "type": "combined",
+      "query_text": "blue denim jacket with a",
+      "query_image_path": "data/images/fashion_019726.jpg",
+      "expected_product_ids": [
+        "fashion_019726"
+      ],
+      "category": "jackets"
+    },
+    {
+      "query_id": "combined_032",
+      "type": "combined",
+      "query_text": "brown belt with a buckle.",
+      "query_image_path": "data/images/fashion_019782.jpg",
+      "expected_product_ids": [
+        "fashion_019782"
+      ],
+      "category": "skirts"
+    },
+    {
+      "query_id": "combined_033",
+      "type": "combined",
+      "query_text": "pink blouse with long sleeves,",
+      "query_image_path": "data/images/fashion_019960.jpg",
+      "expected_product_ids": [
+        "fashion_019960"
+      ],
+      "category": "tops"
+    }
+  ]
+}

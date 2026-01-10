@@ -1,0 +1,168 @@
+.debug-panel-container {
+    margin-top: var(--space-xl);
+    background: rgba(var(--color-surface), 0.6);
+    border: 1px solid rgba(var(--color-border), 0.5);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    animation: fadeIn var(--transition-base);
+}
+
+.debug-panel-header {
+    padding: var(--space-lg);
+    background: rgba(var(--color-surface-elevated), 0.8);
+    border-bottom: 1px solid rgba(var(--color-border), 0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all var(--transition-fast);
+}
+
+.debug-panel-header:hover {
+    background: rgba(var(--color-surface-elevated), 1);
+}
+
+.debug-panel-header-left {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.debug-panel-toggle-icon {
+    transition: transform var(--transition-base);
+}
+
+.debug-panel-toggle-icon.expanded {
+    transform: rotate(90deg);
+}
+
+.debug-panel-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(var(--color-text));
+    margin: 0;
+}
+
+.debug-panel-badge {
+    padding: var(--space-xs) var(--space-sm);
+    background: rgba(var(--color-primary), 0.2);
+    color: rgb(var(--color-primary));
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(var(--color-primary), 0.3);
+}
+
+.debug-panel-content {
+    padding: var(--space-lg);
+}
+
+.debug-panel-section {
+    margin-bottom: var(--space-xl);
+}
+
+.debug-panel-section:last-child {
+    margin-bottom: 0;
+}
+
+.debug-panel-section-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: rgb(var(--color-primary));
+    margin-bottom: var(--space-md);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.debug-panel-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+}
+
+.debug-panel-info-item {
+    background: rgba(var(--color-surface-elevated), 0.6);
+    padding: var(--space-md);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(var(--color-border), 0.3);
+}
+
+.debug-panel-info-label {
+    font-size: 0.75rem;
+    color: rgb(var(--color-text-muted));
+    margin-bottom: var(--space-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.debug-panel-info-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(var(--color-text));
+}
+
+.debug-panel-query-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.debug-panel-query-item {
+    padding: var(--space-sm) var(--space-md);
+    background: rgba(var(--color-primary), 0.1);
+    color: rgb(var(--color-text));
+    font-size: 0.875rem;
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(var(--color-primary), 0.2);
+}
+
+.debug-panel-reasoning {
+    padding: var(--space-md);
+    background: rgba(var(--color-background), 0.5);
+    color: rgba(var(--color-text), 0.9);
+    font-size: 0.875rem;
+    line-height: 1.6;
+    border-radius: var(--radius-md);
+    border-left: 3px solid rgb(var(--color-primary));
+    font-style: italic;
+}
+
+.debug-panel-metric-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-sm);
+}
+
+.debug-panel-metric-label {
+    min-width: 120px;
+    font-size: 0.875rem;
+    color: rgb(var(--color-text-muted));
+}
+
+.debug-panel-progress-bar {
+    flex: 1;
+    height: 8px;
+    background: rgba(var(--color-border), 0.3);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.debug-panel-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, rgb(var(--color-primary)), rgb(var(--color-primary-light)));
+    border-radius: var(--radius-full);
+    transition: width var(--transition-slow);
+}
+
+.debug-panel-metric-value {
+    min-width: 60px;
+    text-align: right;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: rgb(var(--color-text));
+}

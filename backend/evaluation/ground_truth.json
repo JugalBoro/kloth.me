@@ -1,0 +1,602 @@
+{
+  "text_000": {
+    "primary_positives": [
+      "fashion_000212"
+    ],
+    "type": "text"
+  },
+  "text_001": {
+    "primary_positives": [
+      "fashion_000819"
+    ],
+    "type": "text"
+  },
+  "text_002": {
+    "primary_positives": [
+      "fashion_000869"
+    ],
+    "type": "text"
+  },
+  "text_003": {
+    "primary_positives": [
+      "fashion_000976"
+    ],
+    "type": "text"
+  },
+  "text_004": {
+    "primary_positives": [
+      "fashion_001041"
+    ],
+    "type": "text"
+  },
+  "text_005": {
+    "primary_positives": [
+      "fashion_001051"
+    ],
+    "type": "text"
+  },
+  "text_006": {
+    "primary_positives": [
+      "fashion_001423"
+    ],
+    "type": "text"
+  },
+  "text_007": {
+    "primary_positives": [
+      "fashion_001501"
+    ],
+    "type": "text"
+  },
+  "text_008": {
+    "primary_positives": [
+      "fashion_001832"
+    ],
+    "type": "text"
+  },
+  "text_009": {
+    "primary_positives": [
+      "fashion_002168"
+    ],
+    "type": "text"
+  },
+  "text_010": {
+    "primary_positives": [
+      "fashion_002279"
+    ],
+    "type": "text"
+  },
+  "text_011": {
+    "primary_positives": [
+      "fashion_002339"
+    ],
+    "type": "text"
+  },
+  "text_012": {
+    "primary_positives": [
+      "fashion_002582"
+    ],
+    "type": "text"
+  },
+  "text_013": {
+    "primary_positives": [
+      "fashion_002614"
+    ],
+    "type": "text"
+  },
+  "text_014": {
+    "primary_positives": [
+      "fashion_002848"
+    ],
+    "type": "text"
+  },
+  "text_015": {
+    "primary_positives": [
+      "fashion_003039"
+    ],
+    "type": "text"
+  },
+  "text_016": {
+    "primary_positives": [
+      "fashion_003070"
+    ],
+    "type": "text"
+  },
+  "text_017": {
+    "primary_positives": [
+      "fashion_003169"
+    ],
+    "type": "text"
+  },
+  "text_018": {
+    "primary_positives": [
+      "fashion_003309"
+    ],
+    "type": "text"
+  },
+  "text_019": {
+    "primary_positives": [
+      "fashion_003349"
+    ],
+    "type": "text"
+  },
+  "text_020": {
+    "primary_positives": [
+      "fashion_003358"
+    ],
+    "type": "text"
+  },
+  "text_021": {
+    "primary_positives": [
+      "fashion_003648"
+    ],
+    "type": "text"
+  },
+  "text_022": {
+    "primary_positives": [
+      "fashion_004090"
+    ],
+    "type": "text"
+  },
+  "text_023": {
+    "primary_positives": [
+      "fashion_004572"
+    ],
+    "type": "text"
+  },
+  "text_024": {
+    "primary_positives": [
+      "fashion_004575"
+    ],
+    "type": "text"
+  },
+  "text_025": {
+    "primary_positives": [
+      "fashion_004681"
+    ],
+    "type": "text"
+  },
+  "text_026": {
+    "primary_positives": [
+      "fashion_005094"
+    ],
+    "type": "text"
+  },
+  "text_027": {
+    "primary_positives": [
+      "fashion_005231"
+    ],
+    "type": "text"
+  },
+  "text_028": {
+    "primary_positives": [
+      "fashion_005329"
+    ],
+    "type": "text"
+  },
+  "text_029": {
+    "primary_positives": [
+      "fashion_005354"
+    ],
+    "type": "text"
+  },
+  "text_030": {
+    "primary_positives": [
+      "fashion_005607"
+    ],
+    "type": "text"
+  },
+  "text_031": {
+    "primary_positives": [
+      "fashion_006300"
+    ],
+    "type": "text"
+  },
+  "text_032": {
+    "primary_positives": [
+      "fashion_006515"
+    ],
+    "type": "text"
+  },
+  "image_000": {
+    "primary_positives": [
+      "fashion_006865"
+    ],
+    "type": "image"
+  },
+  "image_001": {
+    "primary_positives": [
+      "fashion_006913"
+    ],
+    "type": "image"
+  },
+  "image_002": {
+    "primary_positives": [
+      "fashion_006967"
+    ],
+    "type": "image"
+  },
+  "image_003": {
+    "primary_positives": [
+      "fashion_007055"
+    ],
+    "type": "image"
+  },
+  "image_004": {
+    "primary_positives": [
+      "fashion_007164"
+    ],
+    "type": "image"
+  },
+  "image_005": {
+    "primary_positives": [
+      "fashion_007196"
+    ],
+    "type": "image"
+  },
+  "image_006": {
+    "primary_positives": [
+      "fashion_007223"
+    ],
+    "type": "image"
+  },
+  "image_007": {
+    "primary_positives": [
+      "fashion_007314"
+    ],
+    "type": "image"
+  },
+  "image_008": {
+    "primary_positives": [
+      "fashion_007467"
+    ],
+    "type": "image"
+  },
+  "image_009": {
+    "primary_positives": [
+      "fashion_007505"
+    ],
+    "type": "image"
+  },
+  "image_010": {
+    "primary_positives": [
+      "fashion_007623"
+    ],
+    "type": "image"
+  },
+  "image_011": {
+    "primary_positives": [
+      "fashion_007628"
+    ],
+    "type": "image"
+  },
+  "image_012": {
+    "primary_positives": [
+      "fashion_008021"
+    ],
+    "type": "image"
+  },
+  "image_013": {
+    "primary_positives": [
+      "fashion_008024"
+    ],
+    "type": "image"
+  },
+  "image_014": {
+    "primary_positives": [
+      "fashion_008081"
+    ],
+    "type": "image"
+  },
+  "image_015": {
+    "primary_positives": [
+      "fashion_008667"
+    ],
+    "type": "image"
+  },
+  "image_016": {
+    "primary_positives": [
+      "fashion_008679"
+    ],
+    "type": "image"
+  },
+  "image_017": {
+    "primary_positives": [
+      "fashion_008748"
+    ],
+    "type": "image"
+  },
+  "image_018": {
+    "primary_positives": [
+      "fashion_008773"
+    ],
+    "type": "image"
+  },
+  "image_019": {
+    "primary_positives": [
+      "fashion_008845"
+    ],
+    "type": "image"
+  },
+  "image_020": {
+    "primary_positives": [
+      "fashion_009012"
+    ],
+    "type": "image"
+  },
+  "image_021": {
+    "primary_positives": [
+      "fashion_009105"
+    ],
+    "type": "image"
+  },
+  "image_022": {
+    "primary_positives": [
+      "fashion_009108"
+    ],
+    "type": "image"
+  },
+  "image_023": {
+    "primary_positives": [
+      "fashion_009115"
+    ],
+    "type": "image"
+  },
+  "image_024": {
+    "primary_positives": [
+      "fashion_009482"
+    ],
+    "type": "image"
+  },
+  "image_025": {
+    "primary_positives": [
+      "fashion_009606"
+    ],
+    "type": "image"
+  },
+  "image_026": {
+    "primary_positives": [
+      "fashion_010311"
+    ],
+    "type": "image"
+  },
+  "image_027": {
+    "primary_positives": [
+      "fashion_010336"
+    ],
+    "type": "image"
+  },
+  "image_028": {
+    "primary_positives": [
+      "fashion_010626"
+    ],
+    "type": "image"
+  },
+  "image_029": {
+    "primary_positives": [
+      "fashion_011029"
+    ],
+    "type": "image"
+  },
+  "image_030": {
+    "primary_positives": [
+      "fashion_011149"
+    ],
+    "type": "image"
+  },
+  "image_031": {
+    "primary_positives": [
+      "fashion_011270"
+    ],
+    "type": "image"
+  },
+  "image_032": {
+    "primary_positives": [
+      "fashion_011641"
+    ],
+    "type": "image"
+  },
+  "combined_000": {
+    "primary_positives": [
+      "fashion_011763"
+    ],
+    "type": "combined"
+  },
+  "combined_001": {
+    "primary_positives": [
+      "fashion_011850"
+    ],
+    "type": "combined"
+  },
+  "combined_002": {
+    "primary_positives": [
+      "fashion_011954"
+    ],
+    "type": "combined"
+  },
+  "combined_003": {
+    "primary_positives": [
+      "fashion_012130"
+    ],
+    "type": "combined"
+  },
+  "combined_004": {
+    "primary_positives": [
+      "fashion_012403"
+    ],
+    "type": "combined"
+  },
+  "combined_005": {
+    "primary_positives": [
+      "fashion_012433"
+    ],
+    "type": "combined"
+  },
+  "combined_006": {
+    "primary_positives": [
+      "fashion_012449"
+    ],
+    "type": "combined"
+  },
+  "combined_007": {
+    "primary_positives": [
+      "fashion_012455"
+    ],
+    "type": "combined"
+  },
+  "combined_008": {
+    "primary_positives": [
+      "fashion_012964"
+    ],
+    "type": "combined"
+  },
+  "combined_009": {
+    "primary_positives": [
+      "fashion_013145"
+    ],
+    "type": "combined"
+  },
+  "combined_010": {
+    "primary_positives": [
+      "fashion_013746"
+    ],
+    "type": "combined"
+  },
+  "combined_011": {
+    "primary_positives": [
+      "fashion_013825"
+    ],
+    "type": "combined"
+  },
+  "combined_012": {
+    "primary_positives": [
+      "fashion_013848"
+    ],
+    "type": "combined"
+  },
+  "combined_013": {
+    "primary_positives": [
+      "fashion_014719"
+    ],
+    "type": "combined"
+  },
+  "combined_014": {
+    "primary_positives": [
+      "fashion_014857"
+    ],
+    "type": "combined"
+  },
+  "combined_015": {
+    "primary_positives": [
+      "fashion_015035"
+    ],
+    "type": "combined"
+  },
+  "combined_016": {
+    "primary_positives": [
+      "fashion_015054"
+    ],
+    "type": "combined"
+  },
+  "combined_017": {
+    "primary_positives": [
+      "fashion_015147"
+    ],
+    "type": "combined"
+  },
+  "combined_018": {
+    "primary_positives": [
+      "fashion_016358"
+    ],
+    "type": "combined"
+  },
+  "combined_019": {
+    "primary_positives": [
+      "fashion_016559"
+    ],
+    "type": "combined"
+  },
+  "combined_020": {
+    "primary_positives": [
+      "fashion_017502"
+    ],
+    "type": "combined"
+  },
+  "combined_021": {
+    "primary_positives": [
+      "fashion_017571"
+    ],
+    "type": "combined"
+  },
+  "combined_022": {
+    "primary_positives": [
+      "fashion_017856"
+    ],
+    "type": "combined"
+  },
+  "combined_023": {
+    "primary_positives": [
+      "fashion_017870"
+    ],
+    "type": "combined"
+  },
+  "combined_024": {
+    "primary_positives": [
+      "fashion_018089"
+    ],
+    "type": "combined"
+  },
+  "combined_025": {
+    "primary_positives": [
+      "fashion_018250"
+    ],
+    "type": "combined"
+  },
+  "combined_026": {
+    "primary_positives": [
+      "fashion_018390"
+    ],
+    "type": "combined"
+  },
+  "combined_027": {
+    "primary_positives": [
+      "fashion_018585"
+    ],
+    "type": "combined"
+  },
+  "combined_028": {
+    "primary_positives": [
+      "fashion_018918"
+    ],
+    "type": "combined"
+  },
+  "combined_029": {
+    "primary_positives": [
+      "fashion_019309"
+    ],
+    "type": "combined"
+  },
+  "combined_030": {
+    "primary_positives": [
+      "fashion_019349"
+    ],
+    "type": "combined"
+  },
+  "combined_031": {
+    "primary_positives": [
+      "fashion_019726"
+    ],
+    "type": "combined"
+  },
+  "combined_032": {
+    "primary_positives": [
+      "fashion_019782"
+    ],
+    "type": "combined"
+  },
+  "combined_033": {
+    "primary_positives": [
+      "fashion_019960"
+    ],
+    "type": "combined"
+  }
+}

@@ -1,0 +1,1052 @@
+{
+  "timestamp": "2026-01-09T15:48:29.662233",
+  "num_queries": 100,
+  "overall_metrics": {
+    "mrr": 0.9716666666666667,
+    "precision_at_1": 0.95,
+    "precision_at_5": 0.19999999999999996,
+    "precision_at_10": 0.09999999999999998,
+    "recall_at_5": 1.0,
+    "recall_at_10": 1.0,
+    "recall_at_20": 1.0,
+    "average_rank": 1.07
+  },
+  "by_type_metrics": {
+    "text": {
+      "mrr": 1.0,
+      "precision_at_1": 1.0,
+      "precision_at_5": 0.2,
+      "precision_at_10": 0.1,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "recall_at_20": 1.0,
+      "average_rank": 1.0
+    },
+    "image": {
+      "mrr": 1.0,
+      "precision_at_1": 1.0,
+      "precision_at_5": 0.2,
+      "precision_at_10": 0.1,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "recall_at_20": 1.0,
+      "average_rank": 1.0
+    },
+    "combined": {
+      "mrr": 0.9166666666666666,
+      "precision_at_1": 0.8529411764705882,
+      "precision_at_5": 0.2,
+      "precision_at_10": 0.1,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "recall_at_20": 1.0,
+      "average_rank": 1.2058823529411764
+    }
+  },
+  "per_query_results": [
+    {
+      "query_id": "text_000",
+      "type": "text",
+      "expected": [
+        "fashion_000212"
+      ],
+      "top_result": "fashion_000212",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_001",
+      "type": "text",
+      "expected": [
+        "fashion_000819"
+      ],
+      "top_result": "fashion_000819",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_002",
+      "type": "text",
+      "expected": [
+        "fashion_000869"
+      ],
+      "top_result": "fashion_000869",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_003",
+      "type": "text",
+      "expected": [
+        "fashion_000976"
+      ],
+      "top_result": "fashion_000976",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_004",
+      "type": "text",
+      "expected": [
+        "fashion_001041"
+      ],
+      "top_result": "fashion_001041",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_005",
+      "type": "text",
+      "expected": [
+        "fashion_001051"
+      ],
+      "top_result": "fashion_001051",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_006",
+      "type": "text",
+      "expected": [
+        "fashion_001423"
+      ],
+      "top_result": "fashion_001423",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_007",
+      "type": "text",
+      "expected": [
+        "fashion_001501"
+      ],
+      "top_result": "fashion_001501",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_008",
+      "type": "text",
+      "expected": [
+        "fashion_001832"
+      ],
+      "top_result": "fashion_001832",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_009",
+      "type": "text",
+      "expected": [
+        "fashion_002168"
+      ],
+      "top_result": "fashion_002168",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_010",
+      "type": "text",
+      "expected": [
+        "fashion_002279"
+      ],
+      "top_result": "fashion_002279",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_011",
+      "type": "text",
+      "expected": [
+        "fashion_002339"
+      ],
+      "top_result": "fashion_002339",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_012",
+      "type": "text",
+      "expected": [
+        "fashion_002582"
+      ],
+      "top_result": "fashion_002582",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_013",
+      "type": "text",
+      "expected": [
+        "fashion_002614"
+      ],
+      "top_result": "fashion_002614",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_014",
+      "type": "text",
+      "expected": [
+        "fashion_002848"
+      ],
+      "top_result": "fashion_002848",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_015",
+      "type": "text",
+      "expected": [
+        "fashion_003039"
+      ],
+      "top_result": "fashion_003039",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_016",
+      "type": "text",
+      "expected": [
+        "fashion_003070"
+      ],
+      "top_result": "fashion_003070",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_017",
+      "type": "text",
+      "expected": [
+        "fashion_003169"
+      ],
+      "top_result": "fashion_003169",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_018",
+      "type": "text",
+      "expected": [
+        "fashion_003309"
+      ],
+      "top_result": "fashion_003309",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_019",
+      "type": "text",
+      "expected": [
+        "fashion_003349"
+      ],
+      "top_result": "fashion_003349",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_020",
+      "type": "text",
+      "expected": [
+        "fashion_003358"
+      ],
+      "top_result": "fashion_003358",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_021",
+      "type": "text",
+      "expected": [
+        "fashion_003648"
+      ],
+      "top_result": "fashion_003648",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_022",
+      "type": "text",
+      "expected": [
+        "fashion_004090"
+      ],
+      "top_result": "fashion_004090",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_023",
+      "type": "text",
+      "expected": [
+        "fashion_004572"
+      ],
+      "top_result": "fashion_004572",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_024",
+      "type": "text",
+      "expected": [
+        "fashion_004575"
+      ],
+      "top_result": "fashion_004575",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_025",
+      "type": "text",
+      "expected": [
+        "fashion_004681"
+      ],
+      "top_result": "fashion_004681",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_026",
+      "type": "text",
+      "expected": [
+        "fashion_005094"
+      ],
+      "top_result": "fashion_005094",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_027",
+      "type": "text",
+      "expected": [
+        "fashion_005231"
+      ],
+      "top_result": "fashion_005231",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_028",
+      "type": "text",
+      "expected": [
+        "fashion_005329"
+      ],
+      "top_result": "fashion_005329",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_029",
+      "type": "text",
+      "expected": [
+        "fashion_005354"
+      ],
+      "top_result": "fashion_005354",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_030",
+      "type": "text",
+      "expected": [
+        "fashion_005607"
+      ],
+      "top_result": "fashion_005607",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_031",
+      "type": "text",
+      "expected": [
+        "fashion_006300"
+      ],
+      "top_result": "fashion_006300",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "text_032",
+      "type": "text",
+      "expected": [
+        "fashion_006515"
+      ],
+      "top_result": "fashion_006515",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_000",
+      "type": "image",
+      "expected": [
+        "fashion_006865"
+      ],
+      "top_result": "fashion_006865",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_001",
+      "type": "image",
+      "expected": [
+        "fashion_006913"
+      ],
+      "top_result": "fashion_006913",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_002",
+      "type": "image",
+      "expected": [
+        "fashion_006967"
+      ],
+      "top_result": "fashion_006967",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_003",
+      "type": "image",
+      "expected": [
+        "fashion_007055"
+      ],
+      "top_result": "fashion_007055",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_004",
+      "type": "image",
+      "expected": [
+        "fashion_007164"
+      ],
+      "top_result": "fashion_007164",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_005",
+      "type": "image",
+      "expected": [
+        "fashion_007196"
+      ],
+      "top_result": "fashion_007196",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_006",
+      "type": "image",
+      "expected": [
+        "fashion_007223"
+      ],
+      "top_result": "fashion_007223",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_007",
+      "type": "image",
+      "expected": [
+        "fashion_007314"
+      ],
+      "top_result": "fashion_007314",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_008",
+      "type": "image",
+      "expected": [
+        "fashion_007467"
+      ],
+      "top_result": "fashion_007467",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_009",
+      "type": "image",
+      "expected": [
+        "fashion_007505"
+      ],
+      "top_result": "fashion_007505",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_010",
+      "type": "image",
+      "expected": [
+        "fashion_007623"
+      ],
+      "top_result": "fashion_007623",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_011",
+      "type": "image",
+      "expected": [
+        "fashion_007628"
+      ],
+      "top_result": "fashion_007628",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_012",
+      "type": "image",
+      "expected": [
+        "fashion_008021"
+      ],
+      "top_result": "fashion_008021",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_013",
+      "type": "image",
+      "expected": [
+        "fashion_008024"
+      ],
+      "top_result": "fashion_008024",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_014",
+      "type": "image",
+      "expected": [
+        "fashion_008081"
+      ],
+      "top_result": "fashion_008081",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_015",
+      "type": "image",
+      "expected": [
+        "fashion_008667"
+      ],
+      "top_result": "fashion_008667",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_016",
+      "type": "image",
+      "expected": [
+        "fashion_008679"
+      ],
+      "top_result": "fashion_008679",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_017",
+      "type": "image",
+      "expected": [
+        "fashion_008748"
+      ],
+      "top_result": "fashion_008748",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_018",
+      "type": "image",
+      "expected": [
+        "fashion_008773"
+      ],
+      "top_result": "fashion_008773",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_019",
+      "type": "image",
+      "expected": [
+        "fashion_008845"
+      ],
+      "top_result": "fashion_008845",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_020",
+      "type": "image",
+      "expected": [
+        "fashion_009012"
+      ],
+      "top_result": "fashion_009012",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_021",
+      "type": "image",
+      "expected": [
+        "fashion_009105"
+      ],
+      "top_result": "fashion_009105",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_022",
+      "type": "image",
+      "expected": [
+        "fashion_009108"
+      ],
+      "top_result": "fashion_009108",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_023",
+      "type": "image",
+      "expected": [
+        "fashion_009115"
+      ],
+      "top_result": "fashion_009115",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_024",
+      "type": "image",
+      "expected": [
+        "fashion_009482"
+      ],
+      "top_result": "fashion_009482",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_025",
+      "type": "image",
+      "expected": [
+        "fashion_009606"
+      ],
+      "top_result": "fashion_009606",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_026",
+      "type": "image",
+      "expected": [
+        "fashion_010311"
+      ],
+      "top_result": "fashion_010311",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_027",
+      "type": "image",
+      "expected": [
+        "fashion_010336"
+      ],
+      "top_result": "fashion_010336",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_028",
+      "type": "image",
+      "expected": [
+        "fashion_010626"
+      ],
+      "top_result": "fashion_010626",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_029",
+      "type": "image",
+      "expected": [
+        "fashion_011029"
+      ],
+      "top_result": "fashion_011029",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_030",
+      "type": "image",
+      "expected": [
+        "fashion_011149"
+      ],
+      "top_result": "fashion_011149",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_031",
+      "type": "image",
+      "expected": [
+        "fashion_011270"
+      ],
+      "top_result": "fashion_011270",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "image_032",
+      "type": "image",
+      "expected": [
+        "fashion_011641"
+      ],
+      "top_result": "fashion_011641",
+      "correct": true,
+      "num_results": 20
+    },
+    {
+      "query_id": "combined_000",
+      "type": "combined",
+      "expected": [
+        "fashion_011763"
+      ],
+      "top_result": "fashion_011763",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_001",
+      "type": "combined",
+      "expected": [
+        "fashion_011850"
+      ],
+      "top_result": "fashion_011850",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_002",
+      "type": "combined",
+      "expected": [
+        "fashion_011954"
+      ],
+      "top_result": "fashion_011954",
+      "correct": true,
+      "num_results": 39
+    },
+    {
+      "query_id": "combined_003",
+      "type": "combined",
+      "expected": [
+        "fashion_012130"
+      ],
+      "top_result": "fashion_012130",
+      "correct": true,
+      "num_results": 37
+    },
+    {
+      "query_id": "combined_004",
+      "type": "combined",
+      "expected": [
+        "fashion_012403"
+      ],
+      "top_result": "fashion_010691",
+      "correct": false,
+      "num_results": 39
+    },
+    {
+      "query_id": "combined_005",
+      "type": "combined",
+      "expected": [
+        "fashion_012433"
+      ],
+      "top_result": "fashion_012433",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_006",
+      "type": "combined",
+      "expected": [
+        "fashion_012449"
+      ],
+      "top_result": "fashion_015083",
+      "correct": false,
+      "num_results": 38
+    },
+    {
+      "query_id": "combined_007",
+      "type": "combined",
+      "expected": [
+        "fashion_012455"
+      ],
+      "top_result": "fashion_012455",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_008",
+      "type": "combined",
+      "expected": [
+        "fashion_012964"
+      ],
+      "top_result": "fashion_012964",
+      "correct": true,
+      "num_results": 35
+    },
+    {
+      "query_id": "combined_009",
+      "type": "combined",
+      "expected": [
+        "fashion_013145"
+      ],
+      "top_result": "fashion_013145",
+      "correct": true,
+      "num_results": 39
+    },
+    {
+      "query_id": "combined_010",
+      "type": "combined",
+      "expected": [
+        "fashion_013746"
+      ],
+      "top_result": "fashion_013746",
+      "correct": true,
+      "num_results": 38
+    },
+    {
+      "query_id": "combined_011",
+      "type": "combined",
+      "expected": [
+        "fashion_013825"
+      ],
+      "top_result": "fashion_017399",
+      "correct": false,
+      "num_results": 39
+    },
+    {
+      "query_id": "combined_012",
+      "type": "combined",
+      "expected": [
+        "fashion_013848"
+      ],
+      "top_result": "fashion_013848",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_013",
+      "type": "combined",
+      "expected": [
+        "fashion_014719"
+      ],
+      "top_result": "fashion_014719",
+      "correct": true,
+      "num_results": 39
+    },
+    {
+      "query_id": "combined_014",
+      "type": "combined",
+      "expected": [
+        "fashion_014857"
+      ],
+      "top_result": "fashion_014857",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_015",
+      "type": "combined",
+      "expected": [
+        "fashion_015035"
+      ],
+      "top_result": "fashion_013114",
+      "correct": false,
+      "num_results": 39
+    },
+    {
+      "query_id": "combined_016",
+      "type": "combined",
+      "expected": [
+        "fashion_015054"
+      ],
+      "top_result": "fashion_015054",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_017",
+      "type": "combined",
+      "expected": [
+        "fashion_015147"
+      ],
+      "top_result": "fashion_015147",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_018",
+      "type": "combined",
+      "expected": [
+        "fashion_016358"
+      ],
+      "top_result": "fashion_016358",
+      "correct": true,
+      "num_results": 37
+    },
+    {
+      "query_id": "combined_019",
+      "type": "combined",
+      "expected": [
+        "fashion_016559"
+      ],
+      "top_result": "fashion_016559",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_020",
+      "type": "combined",
+      "expected": [
+        "fashion_017502"
+      ],
+      "top_result": "fashion_017502",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_021",
+      "type": "combined",
+      "expected": [
+        "fashion_017571"
+      ],
+      "top_result": "fashion_017571",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_022",
+      "type": "combined",
+      "expected": [
+        "fashion_017856"
+      ],
+      "top_result": "fashion_017856",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_023",
+      "type": "combined",
+      "expected": [
+        "fashion_017870"
+      ],
+      "top_result": "fashion_017870",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_024",
+      "type": "combined",
+      "expected": [
+        "fashion_018089"
+      ],
+      "top_result": "fashion_018089",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_025",
+      "type": "combined",
+      "expected": [
+        "fashion_018250"
+      ],
+      "top_result": "fashion_018250",
+      "correct": true,
+      "num_results": 38
+    },
+    {
+      "query_id": "combined_026",
+      "type": "combined",
+      "expected": [
+        "fashion_018390"
+      ],
+      "top_result": "fashion_013163",
+      "correct": false,
+      "num_results": 38
+    },
+    {
+      "query_id": "combined_027",
+      "type": "combined",
+      "expected": [
+        "fashion_018585"
+      ],
+      "top_result": "fashion_018585",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_028",
+      "type": "combined",
+      "expected": [
+        "fashion_018918"
+      ],
+      "top_result": "fashion_018918",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_029",
+      "type": "combined",
+      "expected": [
+        "fashion_019309"
+      ],
+      "top_result": "fashion_019309",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_030",
+      "type": "combined",
+      "expected": [
+        "fashion_019349"
+      ],
+      "top_result": "fashion_019349",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_031",
+      "type": "combined",
+      "expected": [
+        "fashion_019726"
+      ],
+      "top_result": "fashion_019726",
+      "correct": true,
+      "num_results": 40
+    },
+    {
+      "query_id": "combined_032",
+      "type": "combined",
+      "expected": [
+        "fashion_019782"
+      ],
+      "top_result": "fashion_019782",
+      "correct": true,
+      "num_results": 38
+    },
+    {
+      "query_id": "combined_033",
+      "type": "combined",
+      "expected": [
+        "fashion_019960"
+      ],
+      "top_result": "fashion_019960",
+      "correct": true,
+      "num_results": 38
+    }
+  ],
+  "summary": {
+    "total_correct": 95,
+    "total_errors": 0
+  }
+}
