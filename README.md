@@ -9,17 +9,17 @@ An AI-powered fashion search system with multimodal capabilities (text, image, a
 
 ## 🌟 Features
 
-- *Multimodal Search*: Search using text, images, or both combined
-- *Agentic Query Planning*: Google Gemini-powered query decomposition and optimization
-- *Perplexity-Style UI*: Clean, modern chat interface with product results
-- *CLIP Embeddings*: State-of-the-art multimodal embeddings (openai/clip-vit-base-patch32)
-- *Vector Search*: Fast similarity search using Qdrant Cloud
-- *Cloud Native*: Uses MongoDB Atlas and Qdrant Cloud (No local Docker required)
-- *Automatic Evaluation*: Built-in benchmark and regression testing
+- **Multimodal Search**: Search using text, images, or both combined
+- **Agentic Query Planning**: Google Gemini-powered query decomposition and optimization
+- **Perplexity-Style UI**: Clean, modern chat interface with product results
+- **CLIP Embeddings**: State-of-the-art multimodal embeddings (openai/clip-vit-base-patch32)
+- **Vector Search**: Fast similarity search using Qdrant Cloud
+- **Cloud Native**: Uses MongoDB Atlas and Qdrant Cloud (No local Docker required)
+- **Automatic Evaluation**: Built-in benchmark and regression testing
 
 ## 🏗️ Architecture
 
-mermaid
+```mermaid
 graph TB
     User[User] --> Frontend[Next.js Frontend]
     Frontend --> API[FastAPI Backend]
@@ -38,21 +38,21 @@ graph TB
     style Retriever fill:#90caf9
     style Qdrant fill:#ffcc80
     style Mongo fill:#ffab91
-
+```
 
 ## 📋 Prerequisites
 
-- *Python 3.9+* (Tested with 3.14)
-- *Node.js 18+* with npm
-- *Google API Key* (for Gemini LLM)
-- *MongoDB Atlas* Account & Cluster
-- *Qdrant Cloud* Account & Cluster
+- **Python 3.9+** (Tested with 3.14)
+- **Node.js 18+** with npm
+- **Google API Key** (for Gemini LLM)
+- **MongoDB Atlas** Account & Cluster
+- **Qdrant Cloud** Account & Cluster
 
 ## 🚀 Quick Start
 
 ### 1. Backend Setup
 
-bash
+```bash
 cd backend
 
 # Create and activate virtual environment
@@ -76,7 +76,7 @@ python -m ingestion.generate_embeddings
 
 # Start backend server
 python -m uvicorn app.main:app --reload
-
+```
 
 Backend will be available at http://localhost:8000
 
@@ -84,7 +84,7 @@ Backend will be available at http://localhost:8000
 
 Open a new terminal:
 
-bash
+```bash
 cd frontend
 
 # Install dependencies
@@ -92,7 +92,7 @@ npm install
 
 # Start development server
 npm run dev
-
+```
 
 Frontend will be available at http://localhost:3000
 
@@ -100,49 +100,49 @@ Frontend will be available at http://localhost:3000
 
 1. Open http://localhost:3000
 2. Try these example queries:
-   - 💬 *Text*: "black midi dress for a summer wedding"
-   - 🖼️ *Image*: Upload a clothing photo
-   - ✨ *Combined*: Upload image + "same style but in red"
+   - 💬 **Text**: "black midi dress for a summer wedding"
+   - 🖼️ **Image**: Upload a clothing photo
+   - ✨ **Combined**: Upload image + "same style but in red"
 
 ## 📊 Evaluation & Testing
 
 ### Create Benchmark Dataset
 
-bash
+```bash
 cd backend
 python3 -m evaluation.create_benchmark
-
+```
 
 ### Run Evaluation
 
-bash
+```bash
 python3 -m evaluation.evaluate
-
+```
 
 Metrics reported:
-- *Recall@K*: % of queries where expected product appears in top-K
-- *MRR*: Mean reciprocal rank of first correct result
-- *Success Rate*: Overall query success percentage
+- **Recall@K**: % of queries where expected product appears in top-K
+- **MRR**: Mean reciprocal rank of first correct result
+- **Success Rate**: Overall query success percentage
 
 ## 🛠️ Technology Stack
 
 ### Backend
-- *FastAPI*: Modern async Python web framework
-- *Google Gemini 2.0 Flash*: Agentic query planning and response generation (Replaced GPT-4o)
-- *OpenAI CLIP*: openai/clip-vit-base-patch32 for robust multimodal embeddings
-- *Qdrant Cloud*: Managed vector database for similarity search
-- *MongoDB Atlas*: Managed NoSQL database for product metadata
-- *Motor*: Async MongoDB driver
+- **FastAPI**: Modern async Python web framework
+- **Google Gemini 2.0 Flash**: Agentic query planning and response generation (Replaced GPT-4o)
+- **OpenAI CLIP**: openai/clip-vit-base-patch32 for robust multimodal embeddings
+- **Qdrant Cloud**: Managed vector database for similarity search
+- **MongoDB Atlas**: Managed NoSQL database for product metadata
+- **Motor**: Async MongoDB driver
 
 ### Frontend
-- *Next.js 14*: React framework with App Router
-- *TypeScript*: Type-safe development
-- *TailwindCSS*: Utility-first styling
-- *Lucide React*: Modern icon library
+- **Next.js 14**: React framework with App Router
+- **TypeScript**: Type-safe development
+- **TailwindCSS**: Utility-first styling
+- **Lucide React**: Modern icon library
 
 ## 📁 Project Structure
 
-
+```
 kloth.me/
 ├── backend/
 │   ├── app/
@@ -168,7 +168,7 @@ kloth.me/
 │   ├── lib/
 │   └── package.json
 └── README.md
-
+```
 
 ## 🔌 API Reference
 
@@ -176,17 +176,19 @@ kloth.me/
 
 Main chat endpoint for multimodal search.
 
-*Request* (multipart/form-data):
-typescript
+**Request** (multipart/form-data):
+
+```typescript
 {
   message: string;           // Required: User's text query
   image?: File;              // Optional: Image file upload
   chat_history?: string;     // Optional: JSON string of chat history
 }
+```
 
+**Response**:
 
-*Response*:
-typescript
+```typescript
 {
   assistant_message: string;     // Natural language summary
   results: ProductResult[];      // Ranked product results
@@ -201,12 +203,12 @@ typescript
     // ... metrics
   };
 }
-
+```
 
 ## 🐛 Troubleshooting
 
 ### "Connection refused" / Database Errors
-- Ensure you have valid *MongoDB Atlas* and *Qdrant Cloud* credentials in your .env.
+- Ensure you have valid **MongoDB Atlas** and **Qdrant Cloud** credentials in your .env.
 - This project runs purely on cloud services; local Docker instances are not required.
 
 ### "NaN detected" / Search returns no results
