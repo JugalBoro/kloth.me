@@ -8,20 +8,19 @@ motor>=3.3.2
 pymongo>=4.6.1
 qdrant-client>=1.7.3
 
-# ML & Embeddings
+# ML & Embeddings (Compatible with Python 3.14)
 sentence-transformers>=2.3.1
 torch>=2.0.0
 torchvision>=0.15.0
 pillow>=10.0.0
-numpy>=1.24.0,<2.0.0
+numpy>=1.26.0
 
 # LLM Integration
 google-genai>=0.2.0
 
 # Data Processing
-pyarrow>=21.0.0
 datasets>=2.16.1
-pandas>=2.1.0,<2.2.0
+pandas>=2.2.0
 tqdm>=4.66.1
 
 # Configuration & Validation
