@@ -42,7 +42,7 @@ graph TB
 
 ## 📋 Prerequisites
 
-- *Python 3.9+* (Python 3.9 recommended for compatibility)
+- *Python 3.9+* (Tested with 3.14)
 - *Node.js 18+* with npm
 - *Google API Key* (for Gemini LLM)
 - *MongoDB Atlas* Account & Cluster
@@ -55,9 +55,9 @@ graph TB
 bash
 cd backend
 
-# Create and activate virtual environment (Python 3.9)
-python3.9 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+# Create and activate virtual environment
+python3 -m venv venv
+source venv/bin/activate 
 
 # Install dependencies
 pip install -r requirements.txt
@@ -68,6 +68,9 @@ pip install -r requirements.txt
 # Download and ingest data (~10-15 minutes)
 # This downloads the Fashion200k subset and populates your cloud databases
 python -m ingestion.download_dataset    
+
+
+# No need to run below two commands. This populates your cloud databases(already ingested data)
 python -m ingestion.ingest_to_mongo     
 python -m ingestion.generate_embeddings 
 
