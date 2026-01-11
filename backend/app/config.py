@@ -1,3 +1,4 @@
+from typing import Optional, List
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from functools import lru_cache
 
@@ -13,7 +14,7 @@ class Settings(BaseSettings):
     qdrant_host: str = "localhost"
     qdrant_port: int = 6333
     qdrant_collection: str = "fashion_products"
-    qdrant_api_key: str | None = None
+    qdrant_api_key: Optional[str] = None
     qdrant_use_https: bool = False
     
     # Google Gemini Configuration
@@ -34,7 +35,7 @@ class Settings(BaseSettings):
     random_seed: int = 42
     
     # CORS Configuration
-    cors_origins: list[str] = ["http://localhost:3000", "http://localhost:3001"]
+    cors_origins: List[str] = ["http://localhost:3000", "http://localhost:3001"]
     
     model_config = SettingsConfigDict(
         env_file=".env",
