@@ -3,23 +3,23 @@
 An AI-powered fashion search system with multimodal capabilities (text, image, and combined queries), featuring LLM-based query planning and a Perplexity-style chat interface.
 
 ![Fashion Search Demo](https://img.shields.io/badge/Status-Ready-success)
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Python](https://img.shields.io/badge/Python-3.9+-blue)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ## 🌟 Features
 
-- **Multimodal Search**: Search using text, images, or both combined
-- **Agentic Query Planning**: Google Gemini-powered query decomposition and optimization
-- **Perplexity-Style UI**: Clean, modern chat interface with product results
-- **CLIP Embeddings**: State-of-the-art multimodal embeddings (`openai/clip-vit-base-patch32`)
-- **Vector Search**: Fast similarity search using Qdrant Cloud
-- **Cloud Native**: Uses MongoDB Atlas and Qdrant Cloud (No local Docker required)
-- **Automatic Evaluation**: Built-in benchmark and regression testing
+- *Multimodal Search*: Search using text, images, or both combined
+- *Agentic Query Planning*: Google Gemini-powered query decomposition and optimization
+- *Perplexity-Style UI*: Clean, modern chat interface with product results
+- *CLIP Embeddings*: State-of-the-art multimodal embeddings (openai/clip-vit-base-patch32)
+- *Vector Search*: Fast similarity search using Qdrant Cloud
+- *Cloud Native*: Uses MongoDB Atlas and Qdrant Cloud (No local Docker required)
+- *Automatic Evaluation*: Built-in benchmark and regression testing
 
 ## 🏗️ Architecture
 
-```mermaid
+mermaid
 graph TB
     User[User] --> Frontend[Next.js Frontend]
     Frontend --> API[FastAPI Backend]
@@ -38,22 +38,26 @@ graph TB
     style Retriever fill:#90caf9
     style Qdrant fill:#ffcc80
     style Mongo fill:#ffab91
-```
+
 
 ## 📋 Prerequisites
 
-- **Python 3.10+**
-- **Node.js 18+** with npm
-- **Google API Key** (for Gemini LLM)
-- **MongoDB Atlas** Account & Cluster
-- **Qdrant Cloud** Account & Cluster
+- *Python 3.9+* (Python 3.9 recommended for compatibility)
+- *Node.js 18+* with npm
+- *Google API Key* (for Gemini LLM)
+- *MongoDB Atlas* Account & Cluster
+- *Qdrant Cloud* Account & Cluster
 
 ## 🚀 Quick Start
 
 ### 1. Backend Setup
 
-```bash
+bash
 cd backend
+
+# Create and activate virtual environment (Python 3.9)
+python3.9 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -63,21 +67,21 @@ pip install -r requirements.txt
 
 # Download and ingest data (~10-15 minutes)
 # This downloads the Fashion200k subset and populates your cloud databases
-python3 -m ingestion.download_dataset    
-python3 -m ingestion.ingest_to_mongo     
-python3 -m ingestion.generate_embeddings 
+python -m ingestion.download_dataset    
+python -m ingestion.ingest_to_mongo     
+python -m ingestion.generate_embeddings 
 
 # Start backend server
-python3 -m uvicorn app.main:app --reload
-```
+python -m uvicorn app.main:app --reload
 
-Backend will be available at `http://localhost:8000`
+
+Backend will be available at http://localhost:8000
 
 ### 2. Frontend Setup
 
 Open a new terminal:
 
-```bash
+bash
 cd frontend
 
 # Install dependencies
@@ -85,57 +89,57 @@ npm install
 
 # Start development server
 npm run dev
-```
 
-Frontend will be available at `http://localhost:3000`
+
+Frontend will be available at http://localhost:3000
 
 ### 3. Try It Out!
 
 1. Open http://localhost:3000
 2. Try these example queries:
-   - 💬 **Text**: "black midi dress for a summer wedding"
-   - 🖼️ **Image**: Upload a clothing photo
-   - ✨ **Combined**: Upload image + "same style but in red"
+   - 💬 *Text*: "black midi dress for a summer wedding"
+   - 🖼️ *Image*: Upload a clothing photo
+   - ✨ *Combined*: Upload image + "same style but in red"
 
 ## 📊 Evaluation & Testing
 
 ### Create Benchmark Dataset
 
-```bash
+bash
 cd backend
 python3 -m evaluation.create_benchmark
-```
+
 
 ### Run Evaluation
 
-```bash
+bash
 python3 -m evaluation.evaluate
-```
+
 
 Metrics reported:
-- **Recall@K**: % of queries where expected product appears in top-K
-- **MRR**: Mean reciprocal rank of first correct result
-- **Success Rate**: Overall query success percentage
+- *Recall@K*: % of queries where expected product appears in top-K
+- *MRR*: Mean reciprocal rank of first correct result
+- *Success Rate*: Overall query success percentage
 
 ## 🛠️ Technology Stack
 
 ### Backend
-- **FastAPI**: Modern async Python web framework
-- **Google Gemini 2.0 Flash**: Agentic query planning and response generation (Replaced GPT-4o)
-- **OpenAI CLIP**: `openai/clip-vit-base-patch32` for robust multimodal embeddings
-- **Qdrant Cloud**: Managed vector database for similarity search
-- **MongoDB Atlas**: Managed NoSQL database for product metadata
-- **Motor**: Async MongoDB driver
+- *FastAPI*: Modern async Python web framework
+- *Google Gemini 2.0 Flash*: Agentic query planning and response generation (Replaced GPT-4o)
+- *OpenAI CLIP*: openai/clip-vit-base-patch32 for robust multimodal embeddings
+- *Qdrant Cloud*: Managed vector database for similarity search
+- *MongoDB Atlas*: Managed NoSQL database for product metadata
+- *Motor*: Async MongoDB driver
 
 ### Frontend
-- **Next.js 14**: React framework with App Router
-- **TypeScript**: Type-safe development
-- **TailwindCSS**: Utility-first styling
-- **Lucide React**: Modern icon library
+- *Next.js 14*: React framework with App Router
+- *TypeScript*: Type-safe development
+- *TailwindCSS*: Utility-first styling
+- *Lucide React*: Modern icon library
 
 ## 📁 Project Structure
 
-```
+
 kloth.me/
 ├── backend/
 │   ├── app/
@@ -161,25 +165,25 @@ kloth.me/
 │   ├── lib/
 │   └── package.json
 └── README.md
-```
+
 
 ## 🔌 API Reference
 
-### `POST /api/chat`
+### POST /api/chat
 
 Main chat endpoint for multimodal search.
 
-**Request** (multipart/form-data):
-```typescript
+*Request* (multipart/form-data):
+typescript
 {
   message: string;           // Required: User's text query
   image?: File;              // Optional: Image file upload
   chat_history?: string;     // Optional: JSON string of chat history
 }
-```
 
-**Response**:
-```typescript
+
+*Response*:
+typescript
 {
   assistant_message: string;     // Natural language summary
   results: ProductResult[];      // Ranked product results
@@ -194,21 +198,21 @@ Main chat endpoint for multimodal search.
     // ... metrics
   };
 }
-```
+
 
 ## 🐛 Troubleshooting
 
 ### "Connection refused" / Database Errors
-- Ensure you have valid **MongoDB Atlas** and **Qdrant Cloud** credentials in your `.env`.
+- Ensure you have valid *MongoDB Atlas* and *Qdrant Cloud* credentials in your .env.
 - This project runs purely on cloud services; local Docker instances are not required.
 
 ### "NaN detected" / Search returns no results
-- Ensure you are using the `openai/clip-vit-base-patch32` model in `config.py`. 
-- Re-run `ingestion.generate_embeddings` to refresh your vector store if you changed models.
+- Ensure you are using the openai/clip-vit-base-patch32 model in config.py. 
+- Re-run ingestion.generate_embeddings to refresh your vector store if you changed models.
 
 ### Gemini API 404
-- Verify your `GOOGLE_API_KEY` is active.
-- Ensure `GEMINI_MODEL` in `.env` corresponds to a model your key has access to (e.g., `gemini-2.0-flash` or `gemini-1.5-flash`).
+- Verify your GOOGLE_API_KEY is active.
+- Ensure GEMINI_MODEL in .env corresponds to a model your key has access to (e.g., gemini-2.0-flash or gemini-1.5-flash).
 
 ## 📝 License
 
@@ -222,4 +226,4 @@ MIT License - see LICENSE file for details
 
 ---
 
-**Built with ❤️ for the multimodal AI search challenge**
+*Built with ❤️ for the multimodal AI search challenge*
