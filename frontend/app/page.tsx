@@ -6,7 +6,7 @@ import { SkeletonLoader } from "@/components/SkeletonLoader";
 import { QueryDisplay } from "@/components/QueryDisplay";
 import { sendChatMessage } from "@/lib/api";
 import { ChatMessage as ChatMessageType, ProductResult, DebugInfo } from "@/lib/types";
-import { Send, Image as ImageIcon, Shirt, ShoppingBag, Search, Sparkles, Sun } from "lucide-react";
+import { Send, Image as ImageIcon, Shirt, ShoppingBag, Search, Sparkles, Sun, Plus } from "lucide-react";
 import "@/styles/components/Page.css";
 
 // Type for search history
@@ -67,6 +67,16 @@ export default function Home() {
         }
     };
 
+    const handleNewChat = () => {
+        setMessages([]);
+        setSearchHistory([]);
+        setInputMessage("");
+        setSelectedImage(null);
+        setImagePreview(null);
+        setExpandedProductId(null);
+        setDebugInfo(null);
+    };
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
@@ -86,8 +96,13 @@ export default function Home() {
         setMessages((prev) => [...prev, userMessage]);
 
         try {
+            // Smart Logic: If Image Only (no text), treat as fresh query (ignore history)
+            // This prevents "red dress" history from polluting a "blue jeans" image search
+            const isImageOnly = (selectedImage && !inputMessage.trim());
+            const historyToSend = isImageOnly ? [] : messages;
+
             // Send to API
-            const response = await sendChatMessage(inputMessage, selectedImage || undefined, messages);
+            const response = await sendChatMessage(inputMessage, selectedImage || undefined, historyToSend);
 
             // Add assistant message
             const assistantMessage: ChatMessageType = {
@@ -346,6 +361,15 @@ export default function Home() {
                                         />
 
                                         <div className="home-page-icon-buttons">
+                                            <button
+                                                type="button"
+                                                onClick={handleNewChat}
+                                                className="home-page-new-chat-button"
+                                                title="New Chat (Clear History)"
+                                                disabled={isLoading}
+                                            >
+                                                <span>New Chat</span>
+                                            </button>
                                             <input
                                                 type="file"
                                                 ref={fileInputRef}

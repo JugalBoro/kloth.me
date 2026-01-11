@@ -23,7 +23,7 @@ class LLMPlanner:
     async def create_query_plan(
         self,
         user_message: str,
-        has_image: bool = False,
+        image: Optional[object] = None,  # PIL Image
         chat_history: Optional[List[dict]] = None
     ) -> QueryPlan:
         """
@@ -31,83 +31,68 @@ class LLMPlanner:
         
         Args:
             user_message: User's text query
-            has_image: Whether an image was uploaded
+            image: PIL Image object (if uploaded)
             chat_history: Previous chat messages for context
             
         Returns:
             QueryPlan with refined queries and search strategy
         """
-        system_prompt = """You are a fashion search query planner. Your job is to analyze user queries and create an optimal search plan.
+        system_prompt = """You are a smart fashion search planner. Your goal is to return a search plan JSON.
 
-Given a user's message and whether they uploaded an image, you must output a JSON object with:
-1. refined_queries: Array of 1-3 text queries to search (decompose complex queries, add synonyms)
-2. use_image: Boolean - whether to use image-based search
-3. text_weight: Float 0-1 - how much to weight text vs image results (0.5 = equal, 1.0 = text only)
-4. top_k: Integer 10-50 - how many results to retrieve per modality
-5. filters: Optional dictionary of strict attribute filters. Keys: "color", "category". Extract ONLY if explicitly mentioned.
-6. reasoning: Brief explanation of your strategy
+CRITICAL: First, analyze the image (if provided). 
+1. Is it fashion-related (clothing, shoes, accessories, jewelry)?
+2. If the image is NOT fashion-related (e.g., a car, landscape, animal, document):
+   - Set "use_image": false
+   - If user text IS present and specific (e.g. "blue shirts"), generate refined queries based on TEXT ONLY.
+   - If user text is empty/generic, set "refined_queries": [].
+   - Set "reasoning": "Image contains [X] which is not fashion-related. Ignoring image and using text query."
+
+If the image IS fashion-related:
+   - Set "use_image": true
+   - Extract visual attributes for filters/refined queries.
+
+Output JSON structure:
+1. refined_queries: List[str] - text queries to run
+2. use_image: bool - whether to search by image embedding
+3. text_weight: float 0-1
+4. top_k: int
+5. filters: dict or null
+6. reasoning: str
 
 Examples:
+- Image: [Red Car], Text: "" -> {"refined_queries": [], "use_image": false, "reasoning": "Image of car ignored."}
+- Image: [House], Text: "find me blue color shirts" -> {"refined_queries": ["blue color shirts", "blue shirts"], "use_image": false, "text_weight": 1.0, "reasoning": "Image is a house (irrelevant). Using user text query only."}
+- Image: [Blue Dress], Text: "matches for this" -> {"refined_queries": ["blue dress"], "use_image": true, "reasoning": "Fashion image detected."}
+"""
 
-Query: "black midi dress for a summer wedding"
-{
-  "refined_queries": ["black midi dress", "summer wedding dress", "elegant black dress"],
-  "use_image": false,
-  "text_weight": 1.0,
-  "top_k": 20,
-  "filters": {"color": "black", "category": "dress"},
-  "reasoning": "User specified color 'black', apply strict filter."
-}
-
-Query: "same style but in red" [with image]
-{
-  "refined_queries": ["red dress", "red clothing"],
-  "use_image": true,
-  "text_weight": 0.3,
-  "top_k": 20,
-  "filters": {"color": "red"},
-  "reasoning": "User wants image-based search with color modification."
-}
-
-Query: "casual summer outfit" [with image]
-{
-  "refined_queries": ["casual summer outfit", "lightweight summer clothing"],
-  "use_image": true,
-  "text_weight": 0.5,
-  "top_k": 25,
-  "filters": null,
-  "reasoning": "No specific color or category constraints."
-}
-
-Output ONLY valid JSON, no additional text."""
-
-        # Build prompt with context
-        prompt_parts = [system_prompt, "\n\n"]
+        # Build prompt content
+        contents = [system_prompt, "\n\n"]
         
-        # Add chat history if available
+        # Add chat history
         if chat_history:
-            prompt_parts.append("Previous conversation:\n")
-            for msg in chat_history[-3:]:  # Last 3 messages
-                prompt_parts.append(f"{msg['role']}: {msg['content']}\n")
-            prompt_parts.append("\n")
+            history_str = "Previous conversation:\n"
+            for msg in chat_history[-3:]:
+                history_str += f"{msg['role']}: {msg['content']}\n"
+            contents.append(history_str + "\n")
         
         # Add current query
-        user_content = f"Query: \"{user_message}\""
-        if has_image:
-            user_content += " [with image]"
-        prompt_parts.append(user_content)
-        
-        full_prompt = "".join(prompt_parts)
-        
+        query_str = f"User Query: \"{user_message}\"\n"
+        if image:
+            query_str += "[User uploaded an image]"
+            contents.append(query_str)
+            contents.append(image) # Pass the actual PIL image to Gemini
+        else:
+            contents.append(query_str)
         
         try:
             # Generate with Gemini
             response = self.client.models.generate_content(
                 model=self.model_name,
-                contents=full_prompt,
+                contents=contents,
                 config=types.GenerateContentConfig(
                     temperature=0.3,
                     max_output_tokens=500,
+                    response_mime_type="application/json" # Enforce strict JSON
                 )
             )
             
@@ -127,6 +112,8 @@ Output ONLY valid JSON, no additional text."""
         except Exception as e:
             print(f"Error creating query plan: {e}")
             # Fallback plan
+            # Fallback plan
+            has_image = image is not None
             return QueryPlan(
                 refined_queries=[user_message],
                 use_image=has_image,
@@ -153,6 +140,8 @@ Output ONLY valid JSON, no additional text."""
             Natural language summary
         """
         if not products:
+            if query_plan and not query_plan.use_image and query_plan.reasoning:
+                return f"I couldn't find any products. {query_plan.reasoning}"
             return "I couldn't find any products matching your query. Please try a different search."
         
         # Prepare product summaries (top 5 only)
@@ -164,6 +153,11 @@ Output ONLY valid JSON, no additional text."""
         
         products_text = "\n".join(product_summaries)
         
+        # Extract planner context
+        planner_context = ""
+        if query_plan:
+            planner_context = f"Planner Reasoning: {query_plan.reasoning}\nImage Used: {query_plan.use_image}"
+        
         prompt = f"""You are a helpful fashion shopping assistant. Given search results, write a 2-3 sentence summary in a Perplexity-style response.
 
 Guidelines:
@@ -174,14 +168,21 @@ Guidelines:
 - Do NOT list individual products or use bullet points
 - Focus on giving a high-level overview of the collection found
 
+CRITICAL TRANSPARENCY:
+- Read the "Planner Reasoning".
+- If the reasoning says the user added an image but it was IGNORED (e.g. unrelated, not fashion), you MUST mention this.
+- Example: "I noticed the image you uploaded appears to be a [object], which isn't fashion-related, so I focused on your request for [text query]."
+
 User query: "{user_query}"
+
+{planner_context}
 
 Top results:
 {products_text}
 
 Total results: {len(products)}
 
-Write a brief summary of what was found:"""
+Write a brief summary of what was found, including any transparency notes about the image:"""
 
         
         try:

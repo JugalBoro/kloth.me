@@ -115,6 +115,41 @@
     transform: translateY(-1px);
 }
 
+.home-page-new-chat-button {
+    height: 40px;
+    padding: 0 1rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    /* Slightly more visible bg */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    /* Crisper glass border */
+    backdrop-filter: blur(10px);
+    /* Always blur for glass effect */
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    /* Subtle depth */
+    color: rgba(var(--color-text), 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+}
+
+.home-page-new-chat-button:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: rgb(var(--color-text));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
 .home-page-primary-button {
     width: 40px;
     height: 40px;

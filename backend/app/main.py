@@ -121,7 +121,7 @@ async def chat(
         llm_planner = get_llm_planner()
         query_plan = await llm_planner.create_query_plan(
             user_message=message,
-            has_image=uploaded_image is not None,
+            image=uploaded_image,
             chat_history=[{"role": m.role, "content": m.content} for m in history]
         )
         
